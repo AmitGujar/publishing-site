@@ -1,0 +1,15 @@
+
+body {
+  background: rgb(184, 184, 184) !important;
+}
+
+.card {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.btn {
+  margin-top: 10px;
+}
