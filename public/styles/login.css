@@ -1,6 +1,7 @@
 
 body {
-  background: rgb(184, 184, 184) !important;
+  /* background: rgb(184, 184, 184) !important; */
+  background-image: url("background.png") !important; 
 }
 
 .card {
