@@ -3,7 +3,6 @@ const app = express();
 const dotenv = require("dotenv").config();
 const methodOverride = require("method-override");
 const articleRouter = require("./src/routes/articles");
-
 const Article = require("./src/models/article");
 const bcrypt = require("bcrypt");
 const passport = require("passport");
@@ -41,7 +40,7 @@ initializePassport(
 
 app.use("/articles", articleRouter);
 
-app.get("/", checkedAuthentication, async (req, res) => {
+app.get("/", async (req, res) => {
   const articles = await Article.find().sort({
     createdAt: "desc",
   });
@@ -126,7 +125,10 @@ app.post("/login", (req, res, next) => {
               expiresIn: "1h",
             }
           );
-          return res.render("index");
+          return res.status(200).json({
+            message: "Auth successful",
+            token: token,
+          });
         }
         res.status(401).json({
           message: "Auth Failed",
