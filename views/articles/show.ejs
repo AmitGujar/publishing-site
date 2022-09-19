@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <%- include('../partials/header'); -%>
 <head>
-  <title>Login</title>
+  <title>Blog Details</title>
 </head>
 <%- include('../partials/nav_home'); -%>
 <body>
@@ -12,8 +12,7 @@
         </div>
         <a href="/" class="btn btn-secondary">All Articles</a>
         <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
-
-        <div>
+        <div style="text-align: center; font-size: 17px;">
             <%- article.sanitizedHtml %>
         </div>
     </div>

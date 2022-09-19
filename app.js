@@ -26,4 +26,13 @@ app.get("/", async (req, res) => {
   res.render("index", {articles: articles});
 });
 
+
+app.get("/login", async (req, res) => {
+  res.render("login");
+})
+
+
+app.get("/register", async (req, res) => {
+  res.render("register");
+})
 module.exports = app;
