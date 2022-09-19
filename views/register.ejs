@@ -13,44 +13,60 @@
         <h1>Register</h1>
         <br />
         <div class="form">
+          <form action="/register" method="post">
             <div class="form-floating">
-                <input type="text" name="name" id="floatingName" class="form-control" placeholder="name">
-                <label for="floatingName">Name</label>
-            </div><br>
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating">
-            <input
-              type="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Password</label>
-          </div><br>
-          <div class="form-floating">
-            <input
-              type="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Confirm Password</label>
-          </div>
-          <label for="Male" class="mt-4">Male </label>
-          <input type="radio" name="Gender" id="Male">
-          <label for="Female">Female </label>
-          <input type="radio" name="Gender" id="Female">
-          <label for="Other" class="mb-2">Other </label>
-          <input type="radio" name="Gender" id="Other"><br>
-          <button type="submit" class="btn btn-outline-primary">Submit</button>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="name"
+              />
+              <label for="name">Name</label>
+            </div>
+            <br />
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+                name="email"
+              />
+              <label for="email">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                name="password"
+              />
+              <label for="password">Password</label>
+            </div>
+            <br />
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+              />
+              <label for="password">Confirm Password</label>
+            </div>
+            <label for="Male" class="mt-4">Male </label>
+            <input type="radio" name="Gender" id="Male" />
+            <label for="Female">Female </label>
+            <input type="radio" name="Gender" id="Female" />
+            <label for="Other" class="mb-2">Other </label>
+            <input type="radio" name="Gender" id="Other" /><br />
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </div>
+  </div>
+</body>
